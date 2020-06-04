@@ -1,3 +1,7 @@
+:root{
+    --link-hover-color: #2196f3;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -36,9 +40,10 @@ li {
 }
 
 .link-header-text:hover,
-.link-header-text:focus {
-    color: #2196f3;
+.link-header-text:focus{
+    color: var(--link-hover-color);
 }
+
 
 .ul-horizontal li {
     display: inline;
@@ -48,12 +53,9 @@ li {
     text-transform: uppercase;
 }
 
-.hero-button {
-    background-color: #2196f3;
+.link-button a {
+    background-color:var(--link-hover-color);
     color: #ffffff;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 10px;
-    padding: 10px;
+    padding: 0px
     border-radius: 4px;
 }
