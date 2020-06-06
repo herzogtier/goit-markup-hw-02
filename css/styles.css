@@ -1,5 +1,11 @@
 :root{
-    --link-hover-color: #2196f3;
+    --main-focus-hover-color: #2196f3;
+    --main-logo-color-primary: #2196f3;
+    --main-logo-color-secondary-header: #000000;
+    --main-logo-color-secondary-footer: #ffffff;
+    --main-headers-color: #212121;
+    --main-paragraph-color: #757575;
+    --link-break-color: #000000;
 }
 
 body {
@@ -22,11 +28,11 @@ li {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: bold;
-    color: black;
+    color: var(--main-logo-color-secondary-header);
 }
 
 .logo-blue {
-    color: #2196f3;
+    color: var(--main-logo-color-primary);
 }
 
 /* .logo-black {
@@ -36,12 +42,12 @@ li {
 .link-header-text {
     font-size: 14px;
     font-weight: 500;
-    color: #212121;
+    color: var(--main-headers-color);
 }
 
 .link-header-text:hover,
 .link-header-text:focus{
-    color: var(--link-hover-color);
+    color: var(--main-focus-hover-color);
 }
 
 
@@ -53,8 +59,12 @@ li {
     text-transform: uppercase;
 }
 
+.link-break-styles {
+    color: var(--link-break-color);
+}
+
 .link-button a {
-    background-color:var(--link-hover-color);
+    background-color:var(--main-focus-hover-color);
     color: #ffffff;
     padding: 0px
     border-radius: 4px;
