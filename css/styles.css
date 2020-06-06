@@ -1,12 +1,14 @@
 :root{
-    --main-focus-hover-color: #2196f3;
-    --main-logo-color-primary: #2196f3;
-    --main-logo-color-secondary-header: #000000;
-    --main-logo-color-secondary-footer: #ffffff;
-    --main-headers-color: #212121;
-    --main-paragraph-color: #757575;
-    --link-break-color: #000000;
-    --nav-project-link-color: #ffffff;
+    --main-focus-hover-color: #2196f3; /*переменная для цвета навигации сайта при состоянии :ховер и :фокус*/
+    --main-logo-color-primary: #2196f3;/*пересенная для цвета первой половины логотипа */
+    --main-logo-color-secondary-header: #000000;/*пересенная для цвета второй половины логотипа в хедере*/
+    --main-logo-color-secondary-footer: #ffffff;/*пересенная для цвета второй половины логотипа в хедере*/
+    --main-headers-color: #212121;/*переменная для цвета текста заголовков*/
+    --main-paragraph-color: #757575;/*переменная для цвета текста в параграфах*/
+    --link-break-color: #000000;/*переменная для цвета текста ссылок по дефолту*/
+    --nav-project-link-color: #ffffff;/*переменная для цвета ссылок в секции по навигации по проектам для :ховер и :фокус*/
+    --advantages-header-text-color: #212121; /*переменная для двета заголовков на странице индекс в секции преимуществ*/
+    /*--advantages-paragraph-text-color: #757575; переменная для двета текста параграфа на странице индекс в секции преимуществ*/
     /* --footer-address-text:;
     --footer-contacts-text:; */
     /* --main-text-font-family: Roboto, sans-serif; */
@@ -23,6 +25,78 @@ a {
 li {
     list-style: none;
 }
+
+/*
+
+класс для свойств заголовков Н3 на странице индекс в секции преимуществ
+
+*/
+.advantages-header-text h3{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--advantages-header-text-color);
+}
+/*
+
+класс для свойств параграфов на странице индекс в секции преимуществ
+
+*/
+.advantages-paragraph-text p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--main-paragraph-color);
+}
+
+/*
+
+класс для свойств заголовков Н2 на странице индекс
+
+*/
+
+.main-header2-style{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--main-headers-color);
+}
+
+/*
+
+класс для свойств заголовков Н3 на странице индекс в секции команды
+
+*/
+.team-header-text h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-headers-color);
+
+}
+
+/*
+
+класс для свойств параграфов на странице индекс в секции команды
+
+*/
+
+.team-paragraph-text p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-paragraph-color);
+}
+
 
 .nav-project-styles{
     font-style: normal;
@@ -55,7 +129,7 @@ li {
     color: var(--main-logo-color-secondary-header);
 }
 
-.logo-blue {
+.logo-primary {
     color: var(--main-logo-color-primary);
 }
 
